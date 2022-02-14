@@ -16,7 +16,7 @@ echo \"-o merge_request.create
 -o merge_request.unlabel=<label>
 origin \$1 \" > config
 gedit config
-" > merge_config.sh
+" > $HOME/merge_config.sh
 
 #Create custom .gitconfig file
 
@@ -35,5 +35,5 @@ echo "
 	h = myhelp
 	pb = checkout @{-1}
 	fl = log -p --pretty=format:'--------------------------------------%n%Cred%h %Creset%cd %n%Cblue%s%d%n[%an] | %Cgreen[%cn]'
-	mr = \"!/home/stsap/merge_config.sh \$(git branch --show-current); git push \$(cat config); rm config\"
+	mr = \"!\$HOME/merge_config.sh \$(git branch --show-current); git push \$(cat config); rm config\"
 " > $HOME/.gitconfig
