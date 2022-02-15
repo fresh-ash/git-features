@@ -3,7 +3,7 @@
 
 #Create merge config file
 echo "
-#!/bin/bash
+#!/bin/bash 
 echo \"-o merge_request.create
 -o merge_request.target=master
 -o merge_request.merge_when_pipeline_succeeds
