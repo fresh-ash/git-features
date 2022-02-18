@@ -15,7 +15,7 @@ echo \"-o merge_request.create
 -o merge_request.should_remove_source_branch
 -o merge_request.unlabel=<label>
 origin \$1 \" > config
-gedit config
+vi config
 " > $HOME/merge_config.sh
 
 #Create custom .gitconfig file
@@ -25,7 +25,7 @@ echo "
 	email = $1
 	name = $2
 [core]
-	editor = gedit
+	editor = vi
 [alias]
 	c = config
 	cg = config --global
