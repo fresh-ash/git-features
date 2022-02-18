@@ -17,7 +17,7 @@ echo \"-o merge_request.create
 origin \$1 \" > config
 vi config
 " > $HOME/merge_config.sh
-
+sudo chmod 777 $HOME/merge_config.sh
 #Create custom .gitconfig file
 
 echo "
